@@ -1,0 +1,156 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 12px; }
+
+.logo {
+  height: 50px;
+  width: auto; }
+
+.navlink .nav-link {
+  color: #660000;
+  margin-right: 7px;
+  font-size: 13px; }
+
+.headersection {
+  background-image: url("../images/New-hamil-banner1.png");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.populartrip {
+  color: #3c88b5;
+  font-size: 24px;
+  font-weight: 700; }
+
+.terminalloc {
+  font-size: 18px; }
+
+.pricesec {
+  font-size: 23px;
+  font-weight: 900 !important; }
+
+.pricemore {
+  font-size: 13px !important;
+  text-align: end !important; }
+
+.welcomediv {
+  color: #0253a1;
+  font-size: 40px;
+  font-weight: 500; }
+
+.welcometext {
+  color: #0253a1;
+  font-size: 18px;
+  font-weight: 400; }
+
+.trips {
+  min-height: 80vh; }
+
+footer {
+  background: #660000;
+  min-height: 10vh; }
+  footer .vm-footer {
+    height: 12vh; }
+    footer .vm-footer p {
+      color: #ffffff;
+      font-size: 14px;
+      margin: auto 0; }
+
+.contactHeading {
+  color: #660000;
+  font-size: 7vh; }
+
+.headingtext {
+  color: #660000;
+  font-size: 2vh; }
+
+.forminput {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #660000 !important; }
+  .forminput::placeholder {
+    color: #660000;
+    font-size: 18px; }
+
+.messagesec {
+  width: 100%;
+  height: 120px; }
+  .messagesec::placeholder {
+    color: #660000;
+    font-size: 18px; }
+
+.btn-primary {
+  color: white !important;
+  background-color: #660000; }
+
+.fa-3x {
+  color: #660000 !important; }
+
+.contactinfo {
+  color: #660000;
+  font-weight: 500; }
+
+.aboutsec {
+  padding: 20px; }
+
+.section-title {
+  padding: 20px;
+  color: white;
+  background-color: #660000; }
+  .section-title .title {
+    font-weight: 500;
+    margin: auto 0; }
+
+.whoweare {
+  color: #660000; }
+
+.whowearetext {
+  color: #660000;
+  font-size: 3vh; }
+
+.missionstat {
+  color: #660000;
+  text-decoration: underline; }
+
+.missiontext {
+  color: #660000;
+  font-size: 3vh; }
+
+.aboutimg {
+  height: 350px; }
+
+.card-body {
+  color: #88a6b7;
+  font-size: 16px; }
+
+.main-section {
+  min-height: 80vh; }
+
+.bg-success {
+  color: white !important;
+  background-color: #660000 !important;
+  font-size: 20px; }
+
+.tablebody {
+  color: #660000 !important;
+  font-size: 16px; }
+
+.page-link {
+  color: #660000 !important; }
+
+.vm-btn-secondary.active {
+  background-color: #660000 !important;
+  border: 1px solid #660000 !important; }
+  .vm-btn-secondary.active:hover {
+    background-color: #660000; }
+
+.btn-vm-custom-primary {
+  background-color: #660000 !important;
+  border: 1px solid #660000 !important; }
+  .btn-vm-custom-primary:hover {
+    background-color: #660000 !important; }
+
+.btn-group-vertical{
+  background-color: #660000 !important;
+}

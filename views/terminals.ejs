@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href='css/styles.css'/>
+    <title><%= title %></title>
+</head>
+<body>
+<%
+const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+};
+%>
+<% include partials/navbar.ejs %>
+<section class="main-section">
+    <div class="container-fluid section-title">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 text-center">
+                <h1 class="title">Our Terminals</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 mx-auto">
+                <table class="table table-bordered">
+                    <thead class="bg-success text-white">
+                    <tr>
+                        <th scope="col">State</th>
+                        <th scope="col">Branch</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Contact Address</th>
+                        <th scope="col">Routes</th>
+                    </tr>
+                    </thead>
+                    <tbody class="tablebody">
+                    <% terminals.forEach( (terminal) => { %>
+                    <tr>
+                        <td scope="row"><%= `${capitalizeFirstLetter(terminal.location.state)}` %></td>
+                        <td scope="row"><%= `${capitalizeFirstLetter(terminal.location.city)}, ${capitalizeFirstLetter(terminal.location.state)}` %></td>
+                        <td><%= `${terminal.location.street}, ${terminal.location.city}, ${terminal.location.state}` %></td>
+                        <td>email@yourcompany.com, +2348156786734</td>
+                        <td>
+                            <% if (terminal.destinations && terminal.destinations.length) { %>
+                            <% terminal.destinations.forEach((destination) =>  { %>
+                            <div>
+                                <%=
+                                    `${capitalizeFirstLetter(destination.location.city)}, ${capitalizeFirstLetter(destination.location.state)}`
+                                %>
+                            </div>
+                            <% }) %>
+                            <% } %>
+                        </td>
+                    </tr>
+                    <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example mx-auto">
+            <ul class="pagination pg-blue justify-content-end">
+                <% if (pagination.previous_page) { %>
+                <li class="page-item"><a href="/terminals?page=<%= pagination.previous %>"
+                                         class="page-link">Previous</a></li>
+                <% } %>
+                <% if (pagination.next_page) { %>
+                <li class="page-item"><a href="/terminals?page=<%= pagination.next %>" class="page-link">Next</a></li>
+                <% } %>
+            </ul>
+        </nav>
+    </div>
+</section>
+<% include partials/footer.ejs %>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+</html>

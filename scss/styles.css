@@ -1,0 +1,182 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.navlink .nav-link {
+  color: #3c88b5;
+  margin-right: 7px;
+  font-size: 13px;
+}
+
+.headersection {
+  background-image: url("../images/divine-banner-main.jpg");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.populartrip {
+  color: #3c88b5;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.terminalloc {
+  font-size: 18px;
+}
+
+.pricesec {
+  font-size: 23px;
+  font-weight: 900 !important;
+}
+
+.pricemore {
+  font-size: 13px !important;
+  text-align: end !important;
+}
+
+.welcomediv {
+  color: #0253a1;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.welcometext {
+  color: #0253a1;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.trips {
+  min-height: 80vh;
+}
+
+footer {
+  background: #3c88b5;
+  min-height: 10vh;
+}
+footer .vm-footer {
+  height: 12vh;
+}
+footer .vm-footer p {
+  color: #ffffff;
+  font-size: 14px;
+  margin: auto 0;
+}
+
+.contactHeading {
+  color: #3c88b5;
+  font-size: 7vh;
+}
+
+.headingtext {
+  color: #3c88b5;
+  font-size: 2vh;
+}
+
+.forminput {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #3c88b5 !important;
+}
+.forminput::placeholder {
+  color: #3c88b5;
+  font-size: 18px;
+}
+
+.messagesec {
+  width: 100%;
+  height: 120px;
+}
+.messagesec::placeholder {
+  color: #3c88b5;
+  font-size: 18px;
+}
+
+.btn-primary {
+  color: white !important;
+  background-color: #3c88b5;
+}
+
+.fa-3x {
+  color: #3c88b5 !important;
+}
+
+.contactinfo {
+  color: #3c88b5;
+  font-weight: 500;
+}
+
+.aboutsec {
+  height: 200px;
+  color: white;
+  background-color: #3c88b5;
+}
+.aboutsec .abouthead {
+  font-weight: 700;
+}
+
+.whoweare {
+  color: #88a6b7;
+}
+
+.whowearetext {
+  color: #88a6b7;
+  font-size: 3vh;
+}
+
+.missionstat {
+  color: #88a6b7;
+  text-decoration: underline;
+}
+
+.missiontext {
+  color: #88a6b7;
+  font-size: 3vh;
+}
+
+.aboutimg {
+  height: 350px;
+}
+
+.card-body {
+  color: #88a6b7;
+  font-size: 16px;
+}
+.card-body .main-section {
+  min-height: 80vh;
+}
+
+.terminalheader {
+  height: 150px;
+  color: white;
+  background-color: #3c88b5;
+}
+.terminalheader .terminaltitle {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.bg-success {
+  color: white !important;
+  background-color: #3c88b5 !important;
+  font-size: 20px;
+}
+
+.tablebody {
+  color: #3c88b5 !important;
+  font-size: 16px;
+}
+
+.page-link {
+  color: #3c88b5 !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
