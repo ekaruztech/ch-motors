@@ -62,6 +62,7 @@ const capitalizeFirstLetter = (string) => {
                 </table>
             </div>
         </div>
+        <% if (pagination) { %>
         <nav aria-label="Page navigation example mx-auto">
             <ul class="pagination pg-blue justify-content-end">
                 <% if (pagination.previous_page) { %>
@@ -73,6 +74,7 @@ const capitalizeFirstLetter = (string) => {
                 <% } %>
             </ul>
         </nav>
+        <% } %>
     </div>
 </section>
 <% include partials/footer.ejs %>
