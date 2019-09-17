@@ -180,3 +180,17 @@ a {
   background-color: #660000 !important; }
   .book-now:hover {
     background-color: #660000 !important; }
+
+.back-to-search {
+  color: #660000 !important; }
+
+.navbar-toggler-icon {
+  color: #660000 !important; }
+
+@media screen and (max-width: 560px) {
+  .headersection {
+    background-image: url("../images/Captain-Hamilton-banner.png");
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; } }

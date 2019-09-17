@@ -234,3 +234,20 @@ a {
     background-color: $bg-primary !important;
   }
 }
+
+.back-to-search{
+  color: $bg-primary !important;
+}
+.navbar-toggler-icon{
+  color: $bg-primary !important;
+}
+
+@media screen and (max-width: 560px){
+  .headersection {
+    background-image: url('../images/Captain-Hamilton-banner.png');
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
