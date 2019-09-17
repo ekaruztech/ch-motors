@@ -173,10 +173,10 @@ footer {
 a {
   color: #660000 !important; }
 
-.trip-detail-single {
-  background-color: #660000 !important;
-  border: solid 0.5px #660000 !important; }
+.number.active {
+  background-color: #660000 !important; }
 
 .book-now {
-  background-color: #660000 !important;
-  border: solid 0.5px #660000 !important; }
+  background-color: #660000 !important; }
+  .book-now:hover {
+    background-color: #660000 !important; }
