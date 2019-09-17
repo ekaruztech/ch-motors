@@ -6,6 +6,9 @@ body {
   height: 50px;
   width: auto; }
 
+.navbar-toggler-icon {
+  color: #660000 !important; }
+
 .navlink .nav-link {
   color: #660000;
   margin-right: 7px;
@@ -19,7 +22,7 @@ body {
   background-position: center center; }
 
 .populartrip {
-  color: #3c88b5;
+  color: #e7ece9;
   font-size: 24px;
   font-weight: 700; }
 
@@ -35,12 +38,12 @@ body {
   text-align: end !important; }
 
 .welcomediv {
-  color: #0253a1;
+  color: #e7ece9;
   font-size: 40px;
   font-weight: 500; }
 
 .welcometext {
-  color: #0253a1;
+  color: #e7ece9;
   font-size: 18px;
   font-weight: 400; }
 
@@ -82,7 +85,10 @@ footer {
 
 .btn-primary {
   color: white !important;
-  background-color: #660000; }
+  background-color: #660000;
+  border: 1px solid #660000; }
+  .btn-primary:hover {
+    background-color: #660000; }
 
 .fa-3x {
   color: #660000 !important; }
@@ -103,18 +109,18 @@ footer {
     margin: auto 0; }
 
 .whoweare {
-  color: #660000; }
+  color: #db7b7b; }
 
 .whowearetext {
-  color: #660000;
+  color: #db7b7b;
   font-size: 3vh; }
 
 .missionstat {
-  color: #660000;
+  color: #db7b7b;
   text-decoration: underline; }
 
 .missiontext {
-  color: #660000;
+  color: #db7b7b;
   font-size: 3vh; }
 
 .aboutimg {

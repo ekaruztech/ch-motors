@@ -26,7 +26,7 @@
 
             <!--Grid column-->
             <div class="col-md-9 mb-md-0 mb-5">
-                <form>
+                <form method="post" action="/contact">
 
                     <!--Grid row-->
                     <div class="row">
@@ -83,12 +83,24 @@
 
                 </form>
 
+
                 <div class="text-center text-md-left">
                     <a class="btn btn-primary btn-block btn-lg mb-5">Send</a>
                 </div>
-                <div class="status"></div>
+                <div class="status">
+                    <% if (locals.errors) { %>
+                        <ul>
+                            <% Object.values(errors).forEach(function(error){ %>
+                                <li><%= error.msg %></li>
+                            <% }); %>
+                        </ul>
+                    <% } %>
+                </div>
+
+
             </div>
             <!--Grid column-->
+
 
             <!--Grid column-->
             <div class="col-md-3 text-center">
