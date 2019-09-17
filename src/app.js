@@ -1,11 +1,11 @@
 import dotenv from 'dotenv';
 import createError from 'http-errors';
 import express from 'express';
-import path from 'path'
-import cookieParser from 'cookie-parser'
-import logger from 'morgan'
-import sassMiddleware from 'node-sass-middleware'
-import http from 'http'
+import path from 'path';
+import cookieParser from 'cookie-parser';
+import logger from 'morgan';
+import sassMiddleware from 'node-sass-middleware';
+import http from 'http';
 
 import routes from './routes/index';
 
