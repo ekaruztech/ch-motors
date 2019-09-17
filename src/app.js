@@ -7,10 +7,9 @@ import logger from 'morgan';
 import sassMiddleware from 'node-sass-middleware';
 import http from 'http';
 
-
 import routes from './routes/index';
 
-dotenv.config({ path: path.join(__dirname, '../.env') });
+dotenv.config();
 
 const app = express();
 
