@@ -55,11 +55,20 @@ var AppController = {
               _ref = _context.sent;
               _meta = _ref._meta;
               data = _ref.data;
-              res.render('terminals', {
-                title: 'Captain Hamilton',
-                terminals: data,
-                pagination: _meta.pagination
-              });
+
+              if (data) {
+                res.render('terminals', {
+                  title: 'Captain Hamilton',
+                  terminals: data,
+                  pagination: _meta.pagination
+                });
+              } else {
+                res.render('terminals', {
+                  title: 'Captain Hamilton',
+                  terminals: [],
+                  pagination: null
+                });
+              }
 
             case 7:
             case "end":
