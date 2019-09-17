@@ -25,7 +25,9 @@ var _http = _interopRequireDefault(require("http"));
 
 var _index = _interopRequireDefault(require("./routes/index"));
 
-_dotenv["default"].config();
+_dotenv["default"].config({
+  path: _path["default"].join(__dirname, '../.env')
+});
 
 var app = (0, _express["default"])(); // view engine setup
 
