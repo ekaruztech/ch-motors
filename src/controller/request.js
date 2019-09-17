@@ -1,8 +1,7 @@
 import axios from 'axios';
 import dotenv from 'dotenv';
-import path from 'path';
 
-dotenv.config({ path: path.join(__dirname, '../../.env') });
+dotenv.config();
 
 const defaultOptions = {
     baseURL: process.env.VOOMSWAY_API_HOST,
