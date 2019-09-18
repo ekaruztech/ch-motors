@@ -29,7 +29,7 @@ var AppController = {
       title: 'Captain Hamilton'
     });
   },
-  trips: function trips(req, res, next) {
+  entry: function entry(req, res, next) {
     res.render('trips', {
       title: 'Captain Hamilton',
       host: process.env.HOST
