@@ -6,8 +6,8 @@ export const AppController = {
 	},
 	async contact(req, res, next) {
 		const { data: [api] } = await APPRequest.getApi({api_key: process.env.VOOMSWAY_API_KEY});
-		const { location, contact_info } = api.account;
-		if (location || contact_info) {
+		if (api.account) {
+			const { location, contact_info } = api.account;
 			res.render('contact', { title: 'Captain Hamilton', location, contact_info });
 		} else {
 			res.render('contact', { title: 'Captain Hamilton' });
