@@ -190,10 +190,12 @@ a {
 @media screen and (max-width: 560px) {
   .headersection {
     background-image: url("../images/Captain-Hamilton-banner.png");
-    height: 700px;
+    height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center; } }
+    background-position: center center; }
+  .welcomediv {
+    font-size: 28px !important; } }
 
 .brandlogo {
   height: 60px; }
