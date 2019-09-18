@@ -10,7 +10,7 @@ export const AppController = {
 	about(req, res, next) {
 		return res.render('about', { title: 'Captain Hamilton' });
 	},
-	trips(req, res, next) {
+	entry(req, res, next) {
 		res.render('trips', { title: 'Captain Hamilton', host: process.env.HOST });
 	},
 	async terminals(req, res, next) {
