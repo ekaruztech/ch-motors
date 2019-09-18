@@ -15,7 +15,7 @@ body {
   color: $bg-primary !important;
 }
 
-.navlink {
+.nav-link {
   .nav-link {
     color: $bg-primary;
     margin-right: 7px;
@@ -250,4 +250,8 @@ a {
     background-size: cover;
     background-position: center center;
   }
+}
+
+.brandlogo{
+  height: 60px;
 }

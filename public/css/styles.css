@@ -9,7 +9,7 @@ body {
 .navbar-toggler-icon {
   color: #660000 !important; }
 
-.navlink .nav-link {
+.nav-link .nav-link {
   color: #660000;
   margin-right: 7px;
   font-size: 13px; }
@@ -194,3 +194,6 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center; } }
+
+.brandlogo {
+  height: 60px; }
