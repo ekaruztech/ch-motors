@@ -14,11 +14,11 @@
 <body>
 <% include partials/navbar.ejs %>
 <section id="voomsway" class="trips"
-         data-apikey="pk_f9d8914eb6615632ef5191ac67f84d8be21dc38cf1002e33e9"
-         data-apiUrl="http://localhost:3000/api/v1"
-         data-baseUrl="http://localhost:3000"
-         data-verifyRedirect="http://localhost:3001/verify-link"
-         data-passwordRedirect="http://localhost:3001/update-password"
+         data-apikey="<%= process.env.VOOMSWAY_API_KEY %>"
+         data-apiUrl="<%= process.env.VOOMSWAY_API_HOST %>"
+         data-baseUrl="<%= process.env.HOST %>"
+         data-verifyRedirect="<%= process.env.HOST %>/vway/verify-link"
+         data-passwordRedirect="<%= process.env.HOST %>/vway/update-password"
 ></section>
 <% include partials/footer.ejs %>
 

@@ -67,7 +67,19 @@ const APPRequest = {
                 err => {
                     return {};
                 });
-    }
+    },
+
+  async getAccount(apiKey) {
+    const config = {
+      method: 'get',
+      url: `/api/account/${apiKey}`,
+    };
+    return createRequest(config)
+      .then(response => response,
+        err => {
+          return {};
+        });
+  }
 };
 
 export default APPRequest;

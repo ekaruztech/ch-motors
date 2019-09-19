@@ -4,8 +4,13 @@ export const AppController = {
 	index(req, res, next) {
 		return res.render('index', { title: 'Captain Hamilton' });
 	},
-	contact(req, res, next) {
-		return res.render('contact', { title: 'Captain Hamilton' });
+	async contact(req, res, next) {
+		const { data: { location, contact_info } } = await APPRequest.getAccount(process.env.VOOMSWAY_API_KEY);
+		if (location || contact_info) {
+			res.render('contact', { title: 'Captain Hamilton', location, contact_info });
+		} else {
+			res.render('contact', { title: 'Captain Hamilton' });
+		}
 	},
 	about(req, res, next) {
 		return res.render('about', { title: 'Captain Hamilton' });
