@@ -15,8 +15,9 @@ export const AppController = {
 	about(req, res, next) {
 		return res.render('about', { title: 'Captain Hamilton' });
 	},
-	entry(req, res, next) {
-		res.render('trips', { title: 'Captain Hamilton', host: process.env.HOST });
+	async entry(req, res, next) {
+		const { data: { social_auth_keys } } = await APPRequest.getAccount(process.env.VOOMSWAY_API_KEY);
+		res.render('trips', { title: 'Captain Hamilton', host: process.env.HOST, social_auth_keys });
 	},
 	async terminals(req, res, next) {
 		const page = req.query.page || 1;
