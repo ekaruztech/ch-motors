@@ -9,8 +9,6 @@ exports.AppController = void 0;
 
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 
-var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/slicedToArray"));
-
 var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
 
 var _request = _interopRequireDefault(require("../controller/request"));
@@ -25,24 +23,22 @@ var AppController = {
     var _contact = (0, _asyncToGenerator2["default"])(
     /*#__PURE__*/
     _regenerator["default"].mark(function _callee(req, res, next) {
-      var _ref, _ref$data, api, _api$account, location, contact_info;
+      var _ref, _ref$data, location, contact_info;
 
       return _regenerator["default"].wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return _request["default"].getApi({
-                api_key: process.env.VOOMSWAY_API_KEY
-              });
+              return _request["default"].getAccount(process.env.VOOMSWAY_API_KEY);
 
             case 2:
               _ref = _context.sent;
-              _ref$data = (0, _slicedToArray2["default"])(_ref.data, 1);
-              api = _ref$data[0];
+              _ref$data = _ref.data;
+              location = _ref$data.location;
+              contact_info = _ref$data.contact_info;
 
-              if (api.account) {
-                _api$account = api.account, location = _api$account.location, contact_info = _api$account.contact_info;
+              if (location || contact_info) {
                 res.render('contact', {
                   title: 'Captain Hamilton',
                   location: location,
@@ -54,7 +50,7 @@ var AppController = {
                 });
               }
 
-            case 6:
+            case 7:
             case "end":
               return _context.stop();
           }
@@ -73,32 +69,63 @@ var AppController = {
       title: 'Captain Hamilton'
     });
   },
-  entry: function entry(req, res, next) {
-    res.render('trips', {
-      title: 'Captain Hamilton',
-      host: process.env.HOST
-    });
-  },
-  terminals: function () {
-    var _terminals = (0, _asyncToGenerator2["default"])(
+  entry: function () {
+    var _entry = (0, _asyncToGenerator2["default"])(
     /*#__PURE__*/
     _regenerator["default"].mark(function _callee2(req, res, next) {
-      var page, _ref2, _meta, data;
+      var _ref2, social_auth_keys;
 
       return _regenerator["default"].wrap(function _callee2$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
             case 0:
+              _context2.next = 2;
+              return _request["default"].getAccount(process.env.VOOMSWAY_API_KEY);
+
+            case 2:
+              _ref2 = _context2.sent;
+              social_auth_keys = _ref2.data.social_auth_keys;
+              console.log('social_auth_keys : ', social_auth_keys);
+              res.render('trips', {
+                title: 'Captain Hamilton',
+                host: process.env.HOST,
+                social_auth_keys: social_auth_keys
+              });
+
+            case 6:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2);
+    }));
+
+    function entry(_x4, _x5, _x6) {
+      return _entry.apply(this, arguments);
+    }
+
+    return entry;
+  }(),
+  terminals: function () {
+    var _terminals = (0, _asyncToGenerator2["default"])(
+    /*#__PURE__*/
+    _regenerator["default"].mark(function _callee3(req, res, next) {
+      var page, _ref3, _meta, data;
+
+      return _regenerator["default"].wrap(function _callee3$(_context3) {
+        while (1) {
+          switch (_context3.prev = _context3.next) {
+            case 0:
               page = req.query.page || 1;
-              _context2.next = 3;
+              _context3.next = 3;
               return _request["default"].getTerminals({
                 page: page
               });
 
             case 3:
-              _ref2 = _context2.sent;
-              _meta = _ref2._meta;
-              data = _ref2.data;
+              _ref3 = _context3.sent;
+              _meta = _ref3._meta;
+              data = _ref3.data;
 
               if (data) {
                 res.render('terminals', {
@@ -116,13 +143,13 @@ var AppController = {
 
             case 7:
             case "end":
-              return _context2.stop();
+              return _context3.stop();
           }
         }
-      }, _callee2);
+      }, _callee3);
     }));
 
-    function terminals(_x4, _x5, _x6) {
+    function terminals(_x7, _x8, _x9) {
       return _terminals.apply(this, arguments);
     }
 

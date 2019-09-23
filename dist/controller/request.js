@@ -107,10 +107,10 @@ var APPRequest = {
 
     return getTerminals;
   }(),
-  getApi: function () {
-    var _getApi = (0, _asyncToGenerator2["default"])(
+  getAccount: function () {
+    var _getAccount = (0, _asyncToGenerator2["default"])(
     /*#__PURE__*/
-    _regenerator["default"].mark(function _callee2(query) {
+    _regenerator["default"].mark(function _callee2(apiKey) {
       var config;
       return _regenerator["default"].wrap(function _callee2$(_context2) {
         while (1) {
@@ -118,10 +118,7 @@ var APPRequest = {
             case 0:
               config = {
                 method: 'get',
-                url: '/api',
-                params: _objectSpread({
-                  population: JSON.stringify(['account'])
-                }, query)
+                url: "/api/account/".concat(apiKey)
               };
               return _context2.abrupt("return", createRequest(config).then(function (response) {
                 return response;
@@ -137,11 +134,11 @@ var APPRequest = {
       }, _callee2);
     }));
 
-    function getApi(_x2) {
-      return _getApi.apply(this, arguments);
+    function getAccount(_x2) {
+      return _getAccount.apply(this, arguments);
     }
 
-    return getApi;
+    return getAccount;
   }()
 };
 var _default = APPRequest;

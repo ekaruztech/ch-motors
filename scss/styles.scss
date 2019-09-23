@@ -1,6 +1,8 @@
 $bg-primary: #660000;
+$bg-main: #660000;
 $accent-color: #151933;
 $accent-light-color: #e7ece9;
+
 
 body {
   font-family: Roboto, sans-serif;
@@ -86,42 +88,6 @@ footer {
 
 }
 
-.headingtext {
-  color: $bg-primary;
-  font-size: 2vh;
-}
-
-.forminput {
-  width: 100%;
-  height: 60px;
-  border: 1px solid $bg-primary !important;
-
-  &::placeholder {
-    color: $bg-primary;
-    font-size: 18px;
-  }
-}
-
-.messagesec {
-  width: 100%;
-  height: 120px;
-  border: 1px solid $bg-primary;
-
-  &::placeholder {
-    color: $bg-primary;
-    font-size: 18px;
-  }
-}
-
-.btn-primary {
-  color: white !important;
-  background-color: $bg-primary;
-  border: 1px solid $bg-primary;
-  &:hover{
-    background-color: $bg-primary;
-  }
-}
-
 .fa-3x {
   color: $bg-primary !important;
 }
@@ -129,10 +95,6 @@ footer {
 .contactinfo {
   color: $bg-primary;
   font-weight: 500;
-}
-
-.aboutsec {
-  padding: 20px;
 }
 
 .section-title {
@@ -149,21 +111,6 @@ footer {
   color: #db7b7b;
 }
 
-.whowearetext {
-  color: #db7b7b;
-  font-size: 3vh;
-}
-
-.missionstat {
-  color: #db7b7b;
-  text-decoration: underline;
-}
-
-.missiontext {
-  color: #db7b7b;
-  font-size: 3vh;
-}
-
 .aboutimg {
   height: 350px;
 }
@@ -171,10 +118,6 @@ footer {
 .card-body {
   color: #88a6b7;
   font-size: 16px;
-}
-
-.main-section {
-  min-height: 100vh - 20;
 }
 
 .bg-success {
@@ -219,8 +162,6 @@ footer {
   color: #660000 !important;
 }
 
-
-
 a {
   color: #660000 !important;
 }
@@ -242,6 +183,65 @@ a {
   color: $bg-primary !important;
 }
 
+
+.main-section {
+  min-height: 100vh - 20;
+  .contact_title {
+    color: $bg-main;
+    font-size: 18px;
+  }
+  .section-title {
+    background: $bg-main;
+    color: #FFFFFF;
+    padding: 20px;
+  }
+  .contact_form {
+    .btn-primary {
+      background-color: $bg-main;
+      color: #ffffff;
+      border-color: $bg-main;
+    }
+    .form-control {
+      width: 100%;
+      height: 60px;
+      border: 1px solid $accent-color !important;
+
+      &::placeholder {
+        color: $accent-color;
+        font-size: 18px;
+      }
+    }
+    textarea {
+      width: 100%;
+      height: 120px;
+
+      &::placeholder {
+        color: $accent-color;
+        font-size: 18px;
+      }
+    }
+  }
+  .about {
+    padding-top: 40px;
+    h1 {
+      color: $bg-main;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .terminal {
+    padding: 20px;
+
+    .card {
+      height: 300px;
+    }
+  }
+}
+
+
 @media screen and (max-width: 560px){
   .headersection {
     background-image: url('../images/Captain-Hamilton-banner.png');
@@ -257,4 +257,79 @@ a {
 
 .brandlogo{
   height: 60px;
+}
+
+
+
+//form start
+.vm-voomsway-filter {
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: rgba(255, 255, 255, 0.9);
+  // one way options
+  .vm-checkbox-label {
+    margin: 0;
+    &.active {
+      background-color: #c52b32;
+      border: 0;
+
+    }
+  }
+  // filter search button
+  .vm-btn-primary {
+    background-color: #c52b32 !important;
+    border: 0;
+    &:hover {
+      background-color: #bc1119 !important;
+    }
+    &:disabled {
+      &:hover {
+        //background-color: white !important;
+      }
+    }
+  }
+
+  .vm-filter-fields-section {
+    // the menu dropdown
+    .react-select__menu  {
+    }
+    // option in dropdown
+    .react-select__menu .react-select__option {
+    }
+    // option hovered over
+    .react-select__menu .react-select__option--is-focused {
+    }
+    // the react-select div - what user sees as input
+    .react-select__control {
+      //background-color: blue;
+    }
+  }
+  // div of selected value or placeholder
+  .react-select__single-value, .react-select__placeholder {
+  }
+
+  .vm-check-ticket-section {
+    // input field for check ticket
+    .ticket-field-input {
+      margin-right: 12px;
+      &.active, &:active,
+      &.focus, &:focus {
+      }
+    }
+  }
+  // tab section
+  .vm-tab-section {
+    .vm-tab-label {
+      color: #401010 !important;
+      // when tab active
+      &.vm-active-tab {
+        border-bottom: 3px solid #c52b32;
+        color: #c52b32 !important;
+      }
+    }
+  }
+}
+
+.card-body {
+  color: #989898 !important;
+  font-size: 14px !important;
 }
