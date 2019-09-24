@@ -64,12 +64,42 @@ footer {
   color: #660000;
   font-size: 7vh; }
 
+.headingtext {
+  color: #660000;
+  font-size: 2vh; }
+
+.forminput {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #660000 !important; }
+  .forminput::placeholder {
+    color: #660000;
+    font-size: 18px; }
+
+.messagesec {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #660000; }
+  .messagesec::placeholder {
+    color: #660000;
+    font-size: 18px; }
+
+.btn-primary {
+  color: white !important;
+  background-color: #660000;
+  border: 1px solid #660000; }
+  .btn-primary:hover {
+    background-color: #660000; }
+
 .fa-3x {
   color: #660000 !important; }
 
 .contactinfo {
   color: #660000;
   font-weight: 500; }
+
+.aboutsec {
+  padding: 20px; }
 
 .section-title {
   padding: 20px;
@@ -82,12 +112,27 @@ footer {
 .whoweare {
   color: #db7b7b; }
 
+.whowearetext {
+  color: #db7b7b;
+  font-size: 3vh; }
+
+.missionstat {
+  color: #db7b7b;
+  text-decoration: underline; }
+
+.missiontext {
+  color: #db7b7b;
+  font-size: 3vh; }
+
 .aboutimg {
   height: 350px; }
 
 .card-body {
   color: #88a6b7;
   font-size: 16px; }
+
+.main-section {
+  min-height: 80vh; }
 
 .bg-success {
   color: white !important;
@@ -125,6 +170,9 @@ footer {
 .btn-custom-white {
   color: #660000 !important; }
 
+a {
+  color: #660000 !important; }
+
 .number.active {
   background-color: #660000 !important; }
 
@@ -139,44 +187,6 @@ footer {
 .navbar-toggler-icon {
   color: #660000 !important; }
 
-.main-section {
-  min-height: 80vh; }
-  .main-section .contact_title {
-    color: #660000;
-    font-size: 18px; }
-  .main-section .section-title {
-    background: #660000;
-    color: #FFFFFF;
-    padding: 20px; }
-  .main-section .contact_form .btn-primary {
-    background-color: #660000;
-    color: #ffffff;
-    border-color: #660000; }
-  .main-section .contact_form .form-control {
-    width: 100%;
-    height: 60px;
-    border: 1px solid #151933 !important; }
-    .main-section .contact_form .form-control::placeholder {
-      color: #151933;
-      font-size: 18px; }
-  .main-section .contact_form textarea {
-    width: 100%;
-    height: 120px; }
-    .main-section .contact_form textarea::placeholder {
-      color: #151933;
-      font-size: 18px; }
-  .main-section .about {
-    padding-top: 40px; }
-    .main-section .about h1 {
-      color: #660000; }
-    .main-section .about p {
-      font-size: 20px;
-      margin-bottom: 30px; }
-  .main-section .terminal {
-    padding: 20px; }
-    .main-section .terminal .card {
-      height: 300px; }
-
 @media screen and (max-width: 560px) {
   .headersection {
     background-image: url("../images/Captain-Hamilton-banner.png");
@@ -190,27 +200,6 @@ footer {
 .brandlogo {
   height: 60px; }
 
-.vm-voomsway-filter {
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: rgba(255, 255, 255, 0.9); }
-  .vm-voomsway-filter .vm-checkbox-label {
-    margin: 0; }
-    .vm-voomsway-filter .vm-checkbox-label.active {
-      background-color: #c52b32;
-      border: 0; }
-  .vm-voomsway-filter .vm-btn-primary {
-    background-color: #c52b32 !important;
-    border: 0; }
-    .vm-voomsway-filter .vm-btn-primary:hover {
-      background-color: #bc1119 !important; }
-  .vm-voomsway-filter .vm-check-ticket-section .ticket-field-input {
-    margin-right: 12px; }
-  .vm-voomsway-filter .vm-tab-section .vm-tab-label {
-    color: #401010 !important; }
-    .vm-voomsway-filter .vm-tab-section .vm-tab-label.vm-active-tab {
-      border-bottom: 3px solid #c52b32;
-      color: #c52b32 !important; }
-
 .card-body {
-  color: #989898 !important;
+  color: #db7b7b !important;
   font-size: 14px !important; }
