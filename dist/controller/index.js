@@ -69,8 +69,7 @@ var AppController = {
       title: 'Captain Hamilton'
     });
   },
-
-  about: function terms(req, res, next) {
+  terms: function terms(req, res, next) {
     return res.render('terms', {
       title: 'Captain Hamilton'
     });

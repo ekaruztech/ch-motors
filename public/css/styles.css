@@ -239,3 +239,15 @@ a {
     margin-bottom: 30px !important; }
   .about .border-info {
     color: #660000 !important; }
+
+.Progress .progress-spinner-message {
+  color: #660000 !important; }
+
+.Progress > div {
+  background-color: #660000 !important; }
+
+.Progress.alt div {
+  background-color: #ffffff !important; }
+
+.Progress.alt .progress-spinner-message {
+  color: #ffffff !important; }
