@@ -52,12 +52,12 @@ body {
 
 footer {
   background: #660000;
-  min-height: 10vh; }
+  min-height: 5vh; }
   footer .vm-footer {
-    height: 12vh; }
+    height: 4vh; }
     footer .vm-footer p {
       color: #ffffff;
-      font-size: 14px;
+      font-size: 12px;
       margin: auto 0; }
 
 .contactHeading {
@@ -203,3 +203,39 @@ a {
 .card-body {
   color: #db7b7b !important;
   font-size: 14px !important; }
+
+.vm-voomsway-filter {
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: rgba(255, 255, 255, 0.9); }
+
+.vm-checkbox-label.active {
+  color: #fff;
+  background-color: #660000;
+  border-color: #660000;
+  pointer-events: none; }
+
+.vm-active-tab {
+  pointer-events: none;
+  color: #660000 !important;
+  border-bottom: 3px solid #660000 !important; }
+
+.vm-btn-primary {
+  background-color: #660000 !important;
+  border: 1px solid #660000 !important; }
+
+.list-inline-item {
+  color: white !important; }
+  .list-inline-item a {
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 13px !important; }
+
+.about {
+  padding-top: 40px !important; }
+  .about h1 {
+    color: #660000 !important; }
+  .about p {
+    font-size: 20px !important;
+    margin-bottom: 30px !important; }
+  .about .border-info {
+    color: #660000 !important; }

@@ -15,6 +15,9 @@ export const AppController = {
 	about(req, res, next) {
 		return res.render('about', { title: 'Captain Hamilton' });
 	},
+	terms(req, res, next) {
+		return res.render('terms', { title: 'Captain Hamilton' });
+	},
 	async entry(req, res, next) {
 		const { data: { social_auth_keys } } = await APPRequest.getAccount(process.env.VOOMSWAY_API_KEY);
 		console.log('social_auth_keys : ', social_auth_keys);

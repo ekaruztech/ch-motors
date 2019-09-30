@@ -69,6 +69,12 @@ var AppController = {
       title: 'Captain Hamilton'
     });
   },
+
+  about: function terms(req, res, next) {
+    return res.render('terms', {
+      title: 'Captain Hamilton'
+    });
+  },
   entry: function () {
     var _entry = (0, _asyncToGenerator2["default"])(
     /*#__PURE__*/
