@@ -20,7 +20,6 @@ export const AppController = {
 	},
 	async entry(req, res, next) {
 		const { data: { social_auth_keys } } = await APPRequest.getAccount(process.env.VOOMSWAY_API_KEY);
-		console.log('social_auth_keys : ', social_auth_keys);
 		res.render('trips', {
 			title: 'Captain Hamilton',
 			host: process.env.HOST,
