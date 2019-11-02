@@ -90,14 +90,13 @@ var AppController = {
             case 2:
               _ref2 = _context2.sent;
               social_auth_keys = _ref2.data.social_auth_keys;
-              console.log('social_auth_keys : ', social_auth_keys);
               res.render('trips', {
                 title: 'Captain Hamilton',
                 host: process.env.HOST,
                 social_auth_keys: social_auth_keys
               });
 
-            case 6:
+            case 5:
             case "end":
               return _context2.stop();
           }
